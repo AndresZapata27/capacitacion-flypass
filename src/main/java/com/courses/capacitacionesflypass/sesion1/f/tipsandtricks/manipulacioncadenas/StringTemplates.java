@@ -4,7 +4,7 @@ import java.text.MessageFormat;
 
 public class StringTemplates {
 
-    public static void main(String[] args) {
+    public static void main1(String[] args) {
         String name = "John";
         int age = 30;
         float altura = 1.89F;
@@ -18,13 +18,22 @@ public class StringTemplates {
         String formattedString = String.format("My name is %s and I am %d years old, and tall %f", name, age, altura);
         System.out.println(formattedString);
 
+
         // Usando String.formatted
-        String string = "My name is %s and I am %d years old, and tall %f";
-        String stringFromated = string.formatted(name, age, altura); // My name is %s and I am %d years old, and tall %f".formatted(name, age, altura);
-        System.out.println(stringFromated);
+        String string = "My name is %s and I am %d years old, and tall %f".formatted(name, age, altura);
+
+
+        // My name is %s and I am %d years old, and tall %f".formatted(name, age, altura);
+        System.out.println(string);
+
+
+
+
+
+
 
         // Usando MessageFormat.format
-        String template = "My name is {0} and I am {1} years old, and tall %f";
+        String template = "My name is {0} and I am {1} years old, and tall {2}";
         Object[] params = {"John", 30, altura};
         String formattedString2 = MessageFormat.format(template, params);
         System.out.println(formattedString2);
@@ -33,7 +42,7 @@ public class StringTemplates {
 
 
 
-    public static void main2(String[] args) {
+    public static void main(String[] args) {
         String name = "John";
         int age = 30;
         float height = 1.89F;

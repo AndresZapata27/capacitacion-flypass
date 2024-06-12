@@ -9,6 +9,7 @@ public class GarbageCollector {
 
     }
 
+    // contexto , scope , alcance
 
     private static void hacerCosasDeGato(){
 
@@ -17,12 +18,18 @@ public class GarbageCollector {
         Cat myCat = new Cat(14,"pepito", "macho", 50L );
         myCat.meow();
 
-        otroMetodo();
-    }
-
-    private static void otroMetodo() {
 
         long otroNum = 10;
+        otroMetodo(otroNum);
+
+        System.gc();
+
+        //mil linea de codigo mas
+    }
+
+    private static void otroMetodo(long nm) {
+
+
 
         Cat otroCat = new Cat();
 

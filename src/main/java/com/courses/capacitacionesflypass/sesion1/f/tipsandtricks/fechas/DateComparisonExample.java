@@ -5,7 +5,8 @@ import java.time.LocalDate;
 public class DateComparisonExample {
 
     public static void main(String[] args) {
-        LocalDate date1 = LocalDate.of(2023, 5, 29);
+
+        LocalDate date1 = LocalDate.of(2024, 5, 29);
         LocalDate date2 = LocalDate.of(2024, 5, 29);
 
         boolean isBefore = date1.isBefore(date2);

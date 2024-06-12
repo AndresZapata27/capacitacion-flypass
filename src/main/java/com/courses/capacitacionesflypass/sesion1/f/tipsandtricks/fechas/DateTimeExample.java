@@ -10,9 +10,9 @@ public class DateTimeExample {
 
     public static void main(String[] args) {
 
-        LocalDate date = LocalDate.now();
-        LocalTime time = LocalTime.now();
-        LocalDateTime dateTime = LocalDateTime.now();
+        LocalDate date = LocalDate.now();  // solo fecha de este momento
+        LocalTime time = LocalTime.now();  // solo hora/min/sec de este momento
+        LocalDateTime dateTime = LocalDateTime.now(); // fecha y time de este momento
 
         System.out.println("Fecha actual: " + date);
         System.out.println("Hora actual: " + time);

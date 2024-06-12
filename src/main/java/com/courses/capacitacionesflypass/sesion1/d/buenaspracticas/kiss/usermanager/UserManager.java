@@ -10,6 +10,10 @@ public class UserManager {
         users = new ArrayList<>();
     }
 
+
+    // KISS usos comunes Condiciones complejas, que tenga muchos IFs y Else, apliques Kiss
+    // Creacion de objetos Complejos o MAPEOS, que tengan muchas relaciones
+
     public void addUser(String user) {
         if (isValidUser(user) && !users.contains(user)) {
             users.add(user);

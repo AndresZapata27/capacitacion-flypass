@@ -11,7 +11,7 @@ public class EnumDemo {
         for (OrderStatus status : OrderStatus.values()) {
 
             System.out.println("Ordinal:" + status.ordinal());
-            System.out.println("Status: " + status + ", Description: " + status.getDescription() + ", Priority: " + status.getPriority());
+            System.out.println("PayStrategies: " + status + ", Description: " + status.getDescription() + ", Priority: " + status.getPriority());
         }
 
         // Uso de un método personalizado en el enum
@@ -40,6 +40,7 @@ public class EnumDemo {
         // Obtener todos los estados con una prioridad específica
         OrderStatus.OrderPriority priority = OrderStatus.OrderPriority.HIGH;
         System.out.println("\nOrder statuses with priority " + priority + ":");
+
         OrderStatus[] statusesByPriority = OrderStatus.getStatusesByPriority(priority);
         for (OrderStatus status : statusesByPriority) {
             System.out.println(status + " (" + status.getDescription() + ")");

@@ -1,6 +1,7 @@
 package com.courses.capacitacionesflypass.generalidades.clases;
 
 public class Person {
+
     private String name;
     private int age;
 
@@ -11,5 +12,13 @@ public class Person {
 
     public void display() {
         System.out.println("Name: " + name + ", Age: " + age);
+
+        PersonRecord personRecord = new PersonRecord("andres", 50);
+
+        personRecord.age();
+        personRecord.name();
+
+
+
     }
 }

@@ -11,7 +11,7 @@ class ShoppingCart2 {
     }
 
     public void addProduct(Product2 product2) {
-        validateProduct(product2);
+        validateProduct(product2); // Siempre se van agregar OK
         product2s.add(product2);
     }
 

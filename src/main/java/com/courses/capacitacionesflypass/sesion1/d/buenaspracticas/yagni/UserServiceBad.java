@@ -1,6 +1,6 @@
 package com.courses.capacitacionesflypass.sesion1.d.buenaspracticas.yagni;
 
-// Mala práctica
+// Mala práctica, HU Requerimiento = solo nos pide , crear , eliminar, actualizar
 public class UserServiceBad {
     public void createUser() {
         // Crear usuario

@@ -2,7 +2,7 @@ package com.courses.capacitacionesflypass.generalidades.palabrasReservadas;
 
 import java.util.Objects;
 
-public class SuperClassExample extends Object {
+class SuperClassExample extends Object {
 
     private int id;
     private String name;

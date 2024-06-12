@@ -19,9 +19,13 @@ public class Payroll {
         }
     }
 
+    //KISS Extraer logica compleja en metodos bien nombrados y entendibles,
+    // y que tengan facil mantenimiento, pensado en los cambios que nos pida negocio
+
     public double calculateMonthlySalary(Employee employee) {
         if (isValidEmployee(employee)) {
-            return calculateBaseSalary(employee) + calculateOvertimePay(employee) - employee.getDeductions();
+            return calculateBaseSalary(employee)
+                    + calculateOvertimePay(employee) - employee.getDeductions();
         } else {
             System.out.println("Invalid employee.");
             return 0.0;

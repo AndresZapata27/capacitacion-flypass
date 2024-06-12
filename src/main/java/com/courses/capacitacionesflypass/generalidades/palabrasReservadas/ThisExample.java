@@ -1,6 +1,6 @@
 package com.courses.capacitacionesflypass.generalidades.palabrasReservadas;
 
-public class ThisExample {
+class ThisExample {
 
     private final int value;
 

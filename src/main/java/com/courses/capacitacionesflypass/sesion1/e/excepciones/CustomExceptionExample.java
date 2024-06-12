@@ -7,7 +7,9 @@ public class CustomExceptionExample {
         try {
             lanzarCustomExceptionChecked();
         } catch (CustomExceptionChecked e) {
-            System.err.println("Caught Custom Exception: " + e.getMessage());
+
+            
+
         }
 
 
@@ -17,7 +19,8 @@ public class CustomExceptionExample {
     }
 
     public static void lanzarCustomExceptionChecked() throws CustomExceptionChecked {
-        throw new CustomExceptionChecked("This is a custom exception");
+
+            throw new CustomExceptionChecked("This is a custom exception");
     }
 
 

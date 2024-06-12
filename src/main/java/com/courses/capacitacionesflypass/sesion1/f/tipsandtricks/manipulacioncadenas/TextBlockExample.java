@@ -7,9 +7,10 @@ public class TextBlockExample {
 
         String textBlock = """
                 Esta es una cadena de texto multilínea.
+                cualquier texto multi %s
                 Permite que el texto se distribuya en varias líneas
                 sin necesidad de caracteres de escape.
-                """;
+                """.formatted("aqui otro texto");
 
         System.out.println(textBlock);
 

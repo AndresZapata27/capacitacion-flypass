@@ -27,7 +27,7 @@ public enum OrderStatus {
         return false;
     }
 
-    // Obtener el siguiente estado posible ejemplo de maquina de estados
+    // Obtener el siguiente estado posible, ejemplo de maquina de estados
     public OrderStatus getNextStatus() {
         switch (this) {
             case PENDING:

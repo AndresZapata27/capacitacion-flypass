@@ -11,6 +11,7 @@ class ShoppingCart {
         product2s = new ArrayList<>();
     }
 
+    // Validaciones , Comparaciones , Creaciones de Objetos
     public void addProduct(Product product2) {
         if (product2 == null || product2.getPrice() <= 0) {
             throw new IllegalArgumentException("Invalid product2");

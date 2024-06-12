@@ -1,6 +1,6 @@
 package com.courses.capacitacionesflypass.generalidades.palabrasReservadas;
 
-  class ModificadoresAcceso {
+class ModificadoresAcceso {
 
     private int privateField;
 

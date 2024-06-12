@@ -2,23 +2,23 @@ package com.courses.capacitacionesflypass.sesion1.f.tipsandtricks.enums;
 
 public class EnumExample {
 
-    public enum Status {
-        PENDING,
-        PROCESSING,
-        COMPLETED
+    public enum PayStrategies {
+        CARD,
+        DEBIT,
+        PAYPAL;
     }
 
     public static void main(String[] args) {
-        Status status = Status.PENDING;
+        PayStrategies payStrategies = PayStrategies.CARD;
         
-        switch (status) {
-            case PENDING:
+        switch (payStrategies) {
+            case CARD:
                 System.out.println("El estado es PENDING.");
                 break;
-            case PROCESSING:
+            case DEBIT:
                 System.out.println("El estado es PROCESSING.");
                 break;
-            case COMPLETED:
+            case PAYPAL:
                 System.out.println("El estado es COMPLETED.");
                 break;
         }

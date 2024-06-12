@@ -4,6 +4,7 @@ package com.courses.capacitacionesflypass.sesion1.d.buenaspracticas.dry.product.
 
 public class MainBad {
     public static void main(String[] args) {
+
         Product product1 = new Product("Laptop", 1000.0);
         Product product2 = new Product("Smartphone", 500.0);
 

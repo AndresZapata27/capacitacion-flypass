@@ -4,7 +4,19 @@ public class ErroresConWrappers {
 
     public static void main(String[] args) {
 
+        Integer a1 = 500;
+        Integer b1 = 500;
 
+        System.out.println(a1 == b1);  // false, porque compara referencias  -> Stack
+
+        System.out.println(a1.equals(b1));  // true, porque compara valores  ->  Heap
+
+
+
+        Integer sum = 0;
+        for (int i = 0; i < 1000; i++) {
+            sum += i;  // Autoboxing en cada iteración  creara 1000 objetos en memoria
+        }
 
 
     }

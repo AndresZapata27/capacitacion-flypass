@@ -1,4 +1,4 @@
-package com.courses.capacitacionesflypass.sesion2.h.anonnimclases;
+package com.courses.capacitacionesflypass.sesion2.h.anonnimclassLambdas;
 
 public class AnonymousClassExample {
     public static void main(String[] args) {

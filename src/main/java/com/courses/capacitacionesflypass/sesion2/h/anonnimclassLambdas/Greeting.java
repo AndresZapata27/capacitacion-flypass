@@ -1,4 +1,4 @@
-package com.courses.capacitacionesflypass.sesion2.h.anonnimclases;
+package com.courses.capacitacionesflypass.sesion2.h.anonnimclassLambdas;
 
 public interface Greeting {
     void greet(String name);
